@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "unit_tests"
+version = "0.1.0"
+description = ""
+authors = ["aibulat <aibulat.ryic@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pre-commit = "^3.6.2"
+pytest = "^8.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
