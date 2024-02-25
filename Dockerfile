@@ -19,6 +19,6 @@ COPY poetry.lock pyproject.toml ./
 RUN poetry install
 
 # Run your app
-COPY . .
-WORKDIR /src
+COPY unit_tests unit_tests
+WORKDIR /unit_tests
 CMD [ "poetry", "run", "pytest", "-xvv", "tests" ]
